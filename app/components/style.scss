@@ -4,17 +4,33 @@
   float: left;
   font-size: 24px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
+  line-height: 24px;
+  height: 40px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 40px;
+}
+
+#square-one{
+  border-top-left-radius: 10px;
+}
+
+#square-four{
+  border-bottom-right-radius: 10px;
 }
 
 .board-row{
     overflow: hidden;
+    button{
+      font-family:"Permanent Marker",cursive;
+    }
+}
+
+span{
+  display: inline-block;
+}
+#right{
+  font-family: 'Pacifico',cursive;
 }
 
 .navbar{

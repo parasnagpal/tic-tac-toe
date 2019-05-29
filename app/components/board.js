@@ -87,15 +87,28 @@ class Board extends React.Component
      this.props.handle(data)
   }
 
-  renderSquare(i){    
-    return <Square value={this.state.grid[i]} refresh={this.state.refresh} position={i} turn={this.state.turn} refreshHandler={this.resetRefresh} handlerFromBoard={this.handler} />;
+  renderSquare(i){
+     let id;    
+      switch(i)
+      {
+        case 0:id="square-one";
+               break;
+        case 2:id="square-two";
+               break;
+        case 6:id="square-three";
+               break;
+        case 8:id="square-four";
+               break;       
+        default:id="null";       
+      }
+    return <Square value={this.state.grid[i]} id={id} refresh={this.state.refresh} position={i} turn={this.state.turn} refreshHandler={this.resetRefresh} handlerFromBoard={this.handler} />;
   }
   
 
   render(){
     return(
-      <div>
-         <div className='status'>{status}</div>
+     
+      <React.Fragment>
          <div className="board-row" >
             {this.renderSquare(0)}
             {this.renderSquare(1)}
@@ -113,7 +126,8 @@ class Board extends React.Component
             {this.renderSquare(7)}
             {this.renderSquare(8)}
           </div>
-        </div>    
+      </React.Fragment>
+         
 
     );
   }

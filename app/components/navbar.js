@@ -4,16 +4,16 @@ import React from 'react';
 
 const Navbar=props=>{    
         return(
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-              <a className="navbar-brand" >Tic tac Toe</a>
-              <div className="collapse navbar-collapse" id="navbarAltMarkup">
-                <div className="navbar-nav">
-                 <div className="nav-item nav-link">Home</div>
-                 <div className="nav-item nav-link">LeaderBoard</div>
-                 <div className="nav-item nav-link">Contact Us</div>
-                 </div>
-               </div>
-            </nav>
+          <React.Fragment>
+
+               <nav className="navbar navbar-light bg-light">
+                   <a className="navbar-brand" href="#">
+                    <img src="https://banner2.kisspng.com/20180724/izj/kisspng-tic-tac-toe-pens-clip-art-tic-tac-toe-5b56f6cab56d25.6651239715324259307431.jpg" width="40" height="40" className="d-inline-block align-top" alt=""/>
+                     Tic-Tac-Toe
+                   </a>
+               </nav>
+
+          </React.Fragment>
         );
     
     };

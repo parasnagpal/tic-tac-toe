@@ -23,7 +23,7 @@ class Square extends React.Component{
    }
     render(){
       return (
-        <button className="square" onClick={()=>{
+        <button className="square" id={this.props.id} onClick={()=>{
          if(!this.props.value ) 
          {
             
@@ -36,7 +36,7 @@ class Square extends React.Component{
           }
          
          }}>
-         {this.state.value}
+         {this.state.value} 
         </button>
       )
     }

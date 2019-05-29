@@ -1,6 +1,30 @@
 @import './bootstrap/bootstrap.min.css';
 
+/*
+.game{
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}*/
 
-div.game-board{
-   padding: 5px;
+
+.navbar{
+   margin: 10px;
+   font-family: 'Pacifico',cursive;
+   *{
+      margin-left: 5px;
+   }
+}
+
+//Tic-Tac-Toe Layout
+.game{
+   margin-left: 40%;
+   margin-top: 10%;
+   padding: 2%;
+   background-color: rgba(172, 172, 172, 0.37);
+   border-radius: 10px;
+}
+
+#right-bar{
+   float:right;
 }

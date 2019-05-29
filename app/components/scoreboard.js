@@ -12,12 +12,13 @@ class ScoreBoard extends React.Component{
 
    render(){
        return(
-           <div id="right">
-              <table>
+           <span id="right">
+            Score
+              <table className="table">
                   <tbody>
-                  <tr>
+                  <tr scope="col">
                       <th>X</th>
-                      <th>O</th>
+                      <th>Y</th>
                   </tr>
                   <tr>
                       <td>{this.props.score.x}</td>
@@ -25,10 +26,10 @@ class ScoreBoard extends React.Component{
                   </tr>
                   </tbody>
               </table>
-           </div>
+           </span>
        );
    }
-
+ 
 
 };
 

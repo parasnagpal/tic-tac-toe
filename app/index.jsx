@@ -45,15 +45,15 @@ class Game extends React.Component{
   render(){
     return(
       <React.Fragment>
-           <Navbar/>
-        <div className='game'>
-                      <div className='game-board'>
-                        <Board handle={this.handleScore}/>
-                     </div>
-        </div>
-      <div id="right-bar">
-         <ScoreBoard score={{ x:this.state.scoreX, y:this.state.scoreY }}/>
-      </div>
+
+        <Navbar/>
+        <span className='game'>
+          <Board handle={this.handleScore}/>
+        </span>
+
+        <span id="right-bar">
+           <ScoreBoard score={{ x:this.state.scoreX, y:this.state.scoreY }}/>
+        </span>
       
       </React.Fragment>
     )
